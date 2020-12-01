@@ -1,0 +1,77 @@
+<!DOCTYPE  html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora cientifica</title>
+<link rel="stylesheet" href="CalculadoraCientifica.css">
+<script src="CalculadoraCientifica.js"></script>
+</head>
+<body>
+<h1>Calculadora cientifica</h1>
+<section>
+<h2>Calculadora</h2>
+<input title="y" type="text" id="resultado" disabled>
+<br>
+<button  value="DEG" id="DEG" onclick="c.rad()">DEG</button>
+<button  value="HYP" id="HYP" onclick="c.hiperbolica();">HYP</button>
+<button  value="F-E" id="F-E" onclick="">F-E</button>
+<br>
+<button  value="MC" id="MC" onclick="calculadora.vaciar();">MC</button>
+<button  value="MR" id="MR" onclick="calculadora.mrc()">MR</button>
+<button  value="M+" id="M+" onclick="calculadora.mMas()">M+</button>
+<button  value="M-" id="M-" onclick="calculadora.mMenos()">M-</button>
+<button  value="MS" id="MS" onclick="calculadora.ms()">MS</button>
+<br>
+<button  value="x²" id="x²" onclick="c.pow2()">x²</button>
+<button  value="xʸ" id="xʸ" onclick="c.pow()">xʸ</button>
+<button  value="sin" id="sin" onclick="c.sin()">sin</button>
+<button  value="cos" id="cos" onclick="c.cos()">cos</button>
+<button  value="tan" id="tan" onclick="c.tan()">tan</button>
+<br>
+<button  value="√" id="√" onclick="c.raiz()">√</button>
+<button  value="10ͯ" id="10ͯ" onclick="c.pow10()">10ͯ</button>
+<button  value="log" id="log" onclick="c.log()">log</button>
+<button  value="Exp" id="Exp" onclick="c.exp()">Exp</button>
+<button  value="Mod" id="Mod" onclick="c.modulo()">Mod</button>
+<br>
+<button  value="↑" id="↑" onclick="c.inversa()">↑</button>
+<button  value="CE" id="CE" onclick="c.eliminarUltimoDigito()">CE</button>
+<button  value="C" id="C" onclick="c.borrar()">C</button>
+<button  value="borrar" id="borrar" onclick="c.eliminarUltimoDigito()">«</button>
+<button  value="·/." id="·/." onclick="c.division()">·/.</button>
+<br>
+<button  value="π" id="π" onclick="c.pi()">π</button>
+<button  value="7" id="7" onclick="c.digitos(7)">7</button>
+<button  value="8" id="8" onclick="c.digitos(8)">8</button>
+<button  value="9" id="9" onclick="c.digitos(9)">9</button>
+<button  value="*" id="*" onclick="c.multiplicacion()">*</button>
+<br>
+<button  value="n!" id="n!" onclick="c.factorial()">n!</button>
+<button  value="4" id="4" onclick="c.digitos(4)">4</button>
+<button  value="5" id="5" onclick="c.digitos(5)">5</button>
+<button  value="6" id="6" onclick="c.digitos(6)">6</button>
+<button  value="-" id="-" onclick="c.resta()">-</button>
+<br>
+<button  value="+-" id="+-" onclick="c.masYMenos()">+-</button>
+<button  value="1" id="1" onclick="c.digitos(1)">1</button>
+<button  value="2" id="2" onclick="c.digitos(2)">2</button>
+<button  value="3" id="3" onclick="c.digitos(3)">3</button>
+<button  value="+" id="+" onclick="c.suma()">+</button>
+<br>
+<button  value="(" id="(" onclick="c.parentesisDrch()">(</button>
+<button  value=")" id=")" onclick="c.parentesisIzq()">)</button>
+<button  value="0" id="0" onclick="c.digitos(0)">0</button>
+<button  value="," id="," onclick="c.puntos()">,</button>
+<button  value="=" id="=" onclick="c.igual()">=</button>
+</section>
+<br>
+<footer>
+<a href="http://validator.w3.org/check/referer" hreflang="en-us">
+<img src="valid-html5-button.png" alt="¡HTML5 valido!" height="31" width="88">
+</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Valido!">
+</a>
+</footer>
+</body>
+</html>
